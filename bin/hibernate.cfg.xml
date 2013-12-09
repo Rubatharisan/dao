@@ -25,6 +25,8 @@
    <!-- List of XML mapping files -->
    <mapping resource="users.hbm.xml"/>
    <mapping class="domain.User"/>
+   <mapping resource="orders.hbm.xml"/>
+   <mapping class="domain.Order"/>
 
 </session-factory>
 </hibernate-configuration>

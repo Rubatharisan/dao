@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 
+import DataAccessObject.OrderDAO;
 import DataAccessObject.UserDAO;
 import Sandbox.CRUD;
 
@@ -59,10 +60,19 @@ public class Main {
 //			System.out.println("List empty");
 //		}
 		
-		CRUD action = new CRUD();
-		action.create("Rubas", "Rubaatharisan@gmail.com");
-		action.create("kk", "aad");
-		action.delete(49);
-				
+//		CRUD action = new CRUD();
+//		
+//		action.create("Rubas", "Rubaatharisan@gmail.com");
+//		action.create("kk", "aad");
+//		action.delete(49);
+//		
+		
+		
+		OrderDAO orderDao = new OrderDAO();
+		Order one = new Order();
+		one.setProduct("Hello");
+		orderDao.addOrder(one);
+		orderDao.deleteOrder(1);
+		
 	}
 }
