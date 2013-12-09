@@ -66,13 +66,12 @@ public class Main {
 //		action.create("kk", "aad");
 //		action.delete(49);
 //		
-		
+		User xo = new User();
+		xo.setEmail("Rubas");
 		
 		OrderDAO orderDao = new OrderDAO();
 		Order one = new Order();
-		one.setProduct("Hello");
 		orderDao.addOrder(one);
-		orderDao.deleteOrder(1);
 		
 	}
 }
