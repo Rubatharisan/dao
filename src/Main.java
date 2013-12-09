@@ -1,4 +1,4 @@
-package domain;
+
 
 import java.util.logging.Level;
 
@@ -6,7 +6,11 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 
+import domain.Order;
+import domain.Product;
+import domain.User;
 import DataAccessObject.OrderDAO;
+import DataAccessObject.ProductDAO;
 import DataAccessObject.UserDAO;
 import Sandbox.CRUD;
 
@@ -66,12 +70,26 @@ public class Main {
 //		action.create("kk", "aad");
 //		action.delete(49);
 //		
-		User xo = new User();
-		xo.setEmail("Rubas");
+//		User xo = new User();
+//		xo.setEmail("Rubas");
+//		
+//		OrderDAO orderDao = new OrderDAO();
+//		Order one = new Order();
+//		orderDao.addOrder(one);
 		
-		OrderDAO orderDao = new OrderDAO();
-		Order one = new Order();
-		orderDao.addOrder(one);
+		ProductDAO productDAO = new ProductDAO();
+		System.out.println();
 		
+		for (Product iter : productDAO.getAllProducts()) {
+			System.out.println(iter.getName());
+		
+		}
+		Product ohMy = productDAO.getProductById(9);
+		ohMy.setName("Bananer");
+		productDAO.updateProduct(ohMy);
+		
+		
+		
+
 	}
 }
