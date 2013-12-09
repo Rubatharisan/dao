@@ -78,18 +78,25 @@ public class Main {
 //		orderDao.addOrder(one);
 		
 		ProductDAO productDAO = new ProductDAO();
-		System.out.println();
-		
-		for (Product iter : productDAO.getAllProducts()) {
-			System.out.println(iter.getName());
-		
-		}
+//		System.out.println();
+//		
+//		for (Product iter : productDAO.getAllProducts()) {
+//			System.out.println(iter.getName());
+//		
+//		}
+//		
 		Product ohMy = productDAO.getProductById(9);
-		ohMy.setName("Bananer");
+		ohMy.setName("Xoxoo");
 		productDAO.updateProduct(ohMy);
 		
 		
-		
+		Order tmpOrder = new Order();
+		OrderDAO dao1 = new OrderDAO();
+//		tmpOrder.setQuantity(4);
+//		tmpOrder.setProduct(ohMy.getName());
+//		dao1.addOrder(tmpOrder);
+//		
 
+		
 	}
 }

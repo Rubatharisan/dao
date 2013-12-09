@@ -17,6 +17,10 @@ public class Order {
 	private Date startDate;
 	private Date finishDate;
 	
+	public Order(){
+		System.out.println("Hi");
+	}
+	
 	public int getId() {
 		return id;
 	}
