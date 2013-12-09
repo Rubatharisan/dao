@@ -17,7 +17,6 @@ public class Order {
 	private Date startDate;
 	private Date finishDate;
 	
-	
 	public int getId() {
 		return id;
 	}
