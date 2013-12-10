@@ -11,7 +11,7 @@
       <id name="id" type="int" column="id">
          <generator class="native"/>
       </id>
-      <property name="product" column="product" type="string"/>
+      <property name="product" column="product" type="int"/>
       <property name="quantity" column="quantity" type="int"/>
       <property name="startDate" column="start_date" type="string"/>
       <property name="finishDate" column="finish_date" type="string"/>

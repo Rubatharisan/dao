@@ -12,14 +12,25 @@ public class Order {
 	
 	@Id
 	private int id;
-	private String product;
+	private int product;
 	private int quantity;
 	private Date startDate;
 	private Date finishDate;
 	
 	public Order(){
-		System.out.println("Hi");
+		product = 0;
+		quantity = 0;
+		startDate = null;
+		finishDate = null;
 	}
+	
+	public Order(int product, int quantity, Date startDate, Date finishDate){
+		this.product = product;
+		this.quantity = quantity;
+		this.startDate = startDate;
+		this.finishDate = finishDate;
+	}
+
 	
 	public int getId() {
 		return id;
@@ -27,10 +38,10 @@ public class Order {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getProduct() {
+	public int getProduct() {
 		return product;
 	}
-	public void setProduct(String product) {
+	public void setProduct(int product) {
 		this.product = product;
 	}
 	public int getQuantity() {

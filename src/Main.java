@@ -48,7 +48,7 @@ public class Main {
 //		hi.setUsername("Hi");
 //		dao.addUser(hi);
 //		
-		UserDAO dao = new UserDAO();
+//		UserDAO dao = new UserDAO();
 //		User k = new User();
 //		k.setEmail("Rubatharisan@gmail.com");
 //		k.setUsername("Rubas");
@@ -85,18 +85,30 @@ public class Main {
 //		
 //		}
 //		
-		Product ohMy = productDAO.getProductById(9);
-		ohMy.setName("Xoxoo");
-		productDAO.updateProduct(ohMy);
-		
-		
+
 		Order tmpOrder = new Order();
 		OrderDAO dao1 = new OrderDAO();
+//		tmpOrder.setProduct(6);
+//		tmpOrder.setQuantity(5);
+//		dao1.addOrder(tmpOrder);
+//		
+//		for(int i = 0; i<10; i++){
+//			System.out.println("Hello");
+//			tmpOrder.setProduct(6);
+//			tmpOrder.setQuantity(i);
+//			dao1.addOrder(tmpOrder);
+//			System.out.println("Added");
+//
+//		}
+//		
 //		tmpOrder.setQuantity(4);
 //		tmpOrder.setProduct(ohMy.getName());
 //		dao1.addOrder(tmpOrder);
 //		
 
-		
+
+		Product bananer = productDAO.getProductById(10);
+		bananer.setName("Bananer");
+		productDAO.updateProduct(bananer);
 	}
 }
